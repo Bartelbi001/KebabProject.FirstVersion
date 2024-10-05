@@ -1,3 +1,6 @@
+using KebabStore.DataAccess;
+using Microsoft.EntityFrameworkCore;
+
 namespace FirstProjectKebab;
 
 public class Program
@@ -6,12 +9,15 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
-
         builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
+
+        builder.Services.AddDbContext<KebabStoreDbContext>(
+            options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString(nameof(KebabStoreDbContext)));
+            });
 
         var app = builder.Build();
 
