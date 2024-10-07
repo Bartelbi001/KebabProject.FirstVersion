@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\KebabStore.Application\KebabStore.Application.csproj" />
     <ProjectReference Include="..\KebabStore.DataAccess\KebabStore.DataAccess.csproj" />
   </ItemGroup>
 

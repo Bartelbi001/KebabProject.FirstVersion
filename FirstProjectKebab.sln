@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstProjectKebab", "FirstProjectKebab\FirstProjectKebab.csproj", "{A25EABE1-7637-4A9E-88F5-623371FB3568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstProjectKebab", "FirstProjectKebab\FirstProjectKebab.csproj", "{A25EABE1-7637-4A9E-88F5-623371FB3568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabStore.Core", "KebabStore.Core\KebabStore.Core.csproj", "{0BB545EA-F446-449E-8F4D-B0C066BDD45D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KebabStore.Core", "KebabStore.Core\KebabStore.Core.csproj", "{0BB545EA-F446-449E-8F4D-B0C066BDD45D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabStore.DataAccess", "KebabStore.DataAccess\KebabStore.DataAccess.csproj", "{922F1B0D-D167-4E08-9505-956F0B54109A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KebabStore.DataAccess", "KebabStore.DataAccess\KebabStore.DataAccess.csproj", "{922F1B0D-D167-4E08-9505-956F0B54109A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabStore.Application", "KebabStore.Application\KebabStore.Application.csproj", "{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{922F1B0D-D167-4E08-9505-956F0B54109A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{922F1B0D-D167-4E08-9505-956F0B54109A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{922F1B0D-D167-4E08-9505-956F0B54109A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

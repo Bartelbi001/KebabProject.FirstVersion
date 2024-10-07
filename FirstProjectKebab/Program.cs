@@ -1,4 +1,6 @@
+using KebabStore.Application.Services;
 using KebabStore.DataAccess;
+using KebabStore.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace FirstProjectKebab;
@@ -18,6 +20,9 @@ public class Program
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString(nameof(KebabStoreDbContext)));
             });
+
+        builder.Services.AddScoped<IKebabService, KebabService>(); // Должен быть в Core-Abstractions
+        builder.Services.AddScoped<IKebabsRepository, KebabsRepository>();
 
         var app = builder.Build();
 
