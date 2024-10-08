@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace KebabStore.DataAccess.Configurations;
 
-internal class KebabConfiguration : IEntityTypeConfiguration<KebabEntity>
+public class KebabConfiguration : IEntityTypeConfiguration<KebabEntity>
 {
     public void Configure(EntityTypeBuilder<KebabEntity> builder)
     {
@@ -20,6 +20,7 @@ internal class KebabConfiguration : IEntityTypeConfiguration<KebabEntity>
             .IsRequired();
 
         builder.Property(k => k.Price)
-            .IsRequired();
+            .IsRequired()
+            .HasColumnType("decimal(18,2)");
     }
 }
