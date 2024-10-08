@@ -21,7 +21,7 @@ public class Program
                 options.UseSqlServer(builder.Configuration.GetConnectionString(nameof(KebabStoreDbContext)));
             });
 
-        builder.Services.AddScoped<IKebabService, KebabService>(); // Должен быть в Core-Abstractions
+        builder.Services.AddScoped<IKebabsService, KebabService>(); // Должен быть в Core-Abstractions
         builder.Services.AddScoped<IKebabsRepository, KebabsRepository>();
 
         var app = builder.Build();
