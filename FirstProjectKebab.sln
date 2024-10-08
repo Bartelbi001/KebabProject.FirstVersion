@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KebabStore.Core", "KebabSto
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KebabStore.DataAccess", "KebabStore.DataAccess\KebabStore.DataAccess.csproj", "{922F1B0D-D167-4E08-9505-956F0B54109A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KebabStore.Application", "KebabStore.Application\KebabStore.Application.csproj", "{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KebabStore.Application", "KebabStore.Application\KebabStore.Application.csproj", "{62EC46AC-3A5D-4CE2-8B56-5F1D7203ABAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
