@@ -3,7 +3,7 @@ using KebabStore.DataAccess.Repositories;
 
 namespace KebabStore.Application.Services;
 
-public class KebabService : IKebabService
+public class KebabService : IKebabsService
 {
     private readonly IKebabsRepository _kebabsRepository;
 

@@ -2,7 +2,7 @@
 
 namespace KebabStore.Application.Services;
 
-public interface IKebabService // Должен быть в Core-Abstractions
+public interface IKebabsService // Должен быть в Core-Abstractions
 {
     Task<Guid> CreateKebab(Kebab kebab);
     Task<Guid> DeleteKebab(Guid id);
