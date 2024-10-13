@@ -48,31 +48,32 @@ export const CreateUpdateKebab = ({
     return (
         <Modal 
             title={
-                mode === Mode.Create ? "Добавить кебаб" : "Редактировать кебаб"
+                mode === Mode.Create ? "Add a kebab" : "Edit a kebab"
         } 
         open={isModalOpen} 
         onOk={handleOnOk}
         onCancel={handleCancel}
-        cancelText={"Отмена"}
+        cancelText={"Cancel"}
     >
         <div className="kebab__modal">
             <input 
+                className="kebab-input"
+                style={{ color: 'rgba(0, 0, 0, 0.88)' }}
                 value={name}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value)}
-                placeholder="Название"
+                placeholder="Name"
             />
             <TextArea
                 value={description}
                 onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setDescription(e.target.value)}
                 autoSize={{ minRows: 3, maxRows: 3 }}
-                placeholder="Описание"
+                placeholder="Description"
             />
             <Input
                 value={price}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPrice(Number(e.target.value))}
-                placeholder="Цена"
+                placeholder="Price"
             />
-
         </div>
         </Modal>
     )

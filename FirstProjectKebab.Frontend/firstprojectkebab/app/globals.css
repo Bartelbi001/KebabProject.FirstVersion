@@ -40,3 +40,10 @@ a {
     color-scheme: dark;
   }
 }
+
+.kebab-input {
+  background-color: white; /* или другой цвет */
+  border: 1px solid #d9d9d9; /* стиль границы */
+  padding: 8px;
+  border-radius: 4px; /* если у других полей есть закругленные углы */
+}

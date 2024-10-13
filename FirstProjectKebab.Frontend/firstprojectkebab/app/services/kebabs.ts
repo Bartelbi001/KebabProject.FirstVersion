@@ -21,7 +21,7 @@ export const createKebab = async (kebabRequest: KebabRequest) => {
 };
 
 export const updateKebab = async (id: string, kebabRequest: KebabRequest) => {
-    await fetch("https://localhost:7298/Kebabs/${id}", {
+    await fetch(`https://localhost:7298/Kebabs/${id}`, {
         method: "PUT",
         headers: {
             "content-type": "application/json",
@@ -31,7 +31,7 @@ export const updateKebab = async (id: string, kebabRequest: KebabRequest) => {
 };
 
 export const deleteKebab = async (id: string) => {
-    await fetch("https://localhost:7298/Kebabs/${id}", {
+    await fetch(`https://localhost:7298/Kebabs/${id}`, {
         method: "DELETE",
     });
 };

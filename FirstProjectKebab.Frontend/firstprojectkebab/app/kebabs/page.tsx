@@ -14,7 +14,7 @@ export default function KebabsPage(){
             description: "",
             price: 1,
     } as Kebab;
-    
+
     const [values, setValues] = useState<Kebab>(defaultValues)
 
     const [kebabs, setKebabs] = useState<Kebab[]>([]);
@@ -79,7 +79,7 @@ export default function KebabsPage(){
                 size="large"
                 onClick={openModal}
             >
-                Добавить кебаб
+                Add a kebab
             </Button>
 
             <CreateUpdateKebab 
